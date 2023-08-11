@@ -19,14 +19,15 @@
 .card {
     background-color: var(--ui-dark-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0px;
+    padding: 0px 15px; 
     color: var(--ui-light-shade-color);
+    margin-top: 30px;
 }
 
 .card__image {
-    height: 100%;
-    width: 100%;
+   max-height: 292px;
+    width: 570px;
 }
 
 .button {
