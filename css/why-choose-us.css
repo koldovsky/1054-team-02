@@ -9,10 +9,11 @@
     color: var(--ui-light-shade-color);
 }
 
-.whu-choose-us__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+@media (min-width: 770px) {
+    .whu-choose-us__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .card {
@@ -26,4 +27,26 @@
 .card__image {
     height: 100%;
     width: 100%;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 100px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button:hover {
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.8);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
