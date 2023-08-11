@@ -1,0 +1,29 @@
+.whu-choose-us {
+    background-color: black;
+    padding: 85px 0px 100px 0px;
+}
+
+.whu-choose-us__title {
+    font-size: 30px;
+    text-align: center;
+    color: var(--ui-light-shade-color);
+}
+
+.whu-choose-us__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--ui-dark-shade-color);
+    border-bottom-color: var(--ui-light-shade-color);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--ui-light-shade-color);
+}
+
+.card__image {
+    height: 100%;
+    width: 100%;
+}
