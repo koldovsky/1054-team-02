@@ -42,6 +42,11 @@
     border: 1px solid var(--ui-dark-shade-color);
 }
 
+.header__social-icon:hover {
+    fill: var(--brend-color);
+    cursor: pointer;
+}
+
 @media (min-width: 992px) {
     .header__nav-burger {
         display: none;
@@ -79,6 +84,11 @@
     font-size: 16px;
     text-decoration: none;
     color: var(--ui-light-shade-color)
+}
+
+.header__nav-link:hover {
+    color: var(--first-hover-color);
+    cursor: pointer;
 }
 
 .header__nav-menu {
