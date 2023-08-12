@@ -1,0 +1,46 @@
+.career {
+    position: relative;
+    height: 500px;
+}
+.career__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("/img/careers/pattern-career.webp") 44.38% 100% / cover no-repeat fixed, rgb(0, 0, 0)
+}
+.career__content {
+    background: white;
+    position: absolute;
+    max-width: 600px;
+    padding: 50px;
+}
+.career__intro {
+    font-size: 24px;
+    font-weight: bold;
+    color: #838383;
+}
+.career__title {
+    font-size: 36px;
+    color: black;
+    margin: 10px 0;
+}
+.career__info {
+    font-size: 18px;
+    color: #838383;
+    margin-bottom: 20px;
+}
+.career__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1faff9;
+    color: #fff;
+    text-decoration: none;
+    border-width: 1px;
+    border-radius: 28px;
+    transition: background-color 0.5s ease;
+}
+.career__button:hover {
+    background-color: #2fddf5;
+}
