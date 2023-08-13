@@ -1,6 +1,25 @@
 .latest-news__title {
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     max-width: 100%;
     word-wrap: break-word;
     text-align: center;
+}
+
+.button {
+    background-color: var(--second-hover-color);
+    color: var(--ui-dark-accent-color);
+    border-radius: 28px ;
+    min-width: 100px;
+    padding: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: var(--first-hover-color);
 }
