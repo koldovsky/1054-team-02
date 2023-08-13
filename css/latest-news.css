@@ -1,0 +1,6 @@
+.latest-news__title {
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
