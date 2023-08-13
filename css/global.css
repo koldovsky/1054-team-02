@@ -13,6 +13,7 @@
     --ui-dark-shade-color: #000;
     --ui-light-shade-color: #fff;
     --first-hover-color: #13bde3;
+    --second-hover-color: #e6e6e6;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }

@@ -29,6 +29,11 @@
     fill: var(--ui-light-shade-color);
 }
 
+.follow-us__social-icon:hover {
+    fill: var(--second-hover-color);
+    cursor: pointer;
+}
+
 .follow-us__social-list {
     display: flex;
     justify-content: center;
