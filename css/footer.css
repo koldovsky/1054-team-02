@@ -33,6 +33,11 @@
     color: var(--ui-dark-shade-color);
 }
 
+.footer__nav-link:hover {
+    color: var(--first-hover-color);
+    cursor: pointer;
+}
+
 @media (min-width: 767px) {
     .footer__menu {
         flex-direction: row;
