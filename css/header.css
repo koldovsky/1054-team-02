@@ -47,6 +47,11 @@
     cursor: pointer;
 }
 
+.header__social-list,
+.header__nav-list {
+    list-style: none;
+}
+
 @media (min-width: 992px) {
     .header__nav-burger {
         display: none;
