@@ -1,0 +1,37 @@
+.follow-us {
+    background: linear-gradient(to right, var(--brend-color) 0%, var(--brend-color-gradient) 100%);
+    padding: 85px 25px;
+}
+
+.follow-us__title-block {
+    text-align: center;
+}
+
+.follow-us__title {
+    color: var(--ui-light-shade-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.follow-us__subtitle {
+    color: var(--ui-light-shade-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.follow-us__social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    fill: var(--ui-light-shade-color);
+}
+
+.follow-us__social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
