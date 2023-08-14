@@ -1,20 +1,23 @@
 .featured-postcads__cards{
     background-color: var(--ui-light-shade-color);
 }
-
-.button{
-    background-color: var(--ui-light-shade-color);
+.featured-podcasts__button{
+    width: 130px;
+    font: 12px 'Montserrat', sans-serif;
+    padding: 12px 24px;
+    color: gray;
     text-decoration: none;
+    border-radius: 28px;
+    display: inline-block;
     cursor: pointer;
-    border-radius: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-left:540px ;
     display: flex;
     justify-content: center; 
-    align-items: center;
 }
-.button:hover {
-    color: #ffffff;
+.featured-podcasts__button:hover {
     background-color: var(--brend-color-gradient);
-    transition: color 0.5s ease;
+    color: #ffffff;
+    
 }

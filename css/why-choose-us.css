@@ -19,7 +19,7 @@
     }
 }
 
-.card {
+.why-choose-us__card {
     background-color: var(--ui-dark-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
     border-radius: 5px;
