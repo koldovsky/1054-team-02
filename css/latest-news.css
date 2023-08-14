@@ -1,9 +1,60 @@
+.container {
+}
+
 .latest-news__title {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     max-width: 100%;
     word-wrap: break-word;
     text-align: center;
+    display: block;
+    margin: 20px 20px 20px 20px;
+    padding: 0;
+}
+
+.latest-news__menu {
+    margin: 15px 15px 15px 15px;
+    padding: 0;
+}
+
+.latest-news__menu-item picture .picture__image {
+    display: block;
+    max-width: 100%;
+}
+
+.picture__details {
+    margin: 30px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    font-size: 23px;
+    background-color: var(--ui-dark-shade-color);
+    background-size: url(../img/latest-news/leaves.jpg) 40% /contain;
+    background-image:  botton no-repeat;
+}
+
+.picture__details .picture__category {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--second-hover-color);
+    text-align: left;
+    text-transform: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    background-color: var(--ui-dark-shade-color);
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+.picture__details .picture__title {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ui-light-shade-color);
+    text-align: left;
+    text-transform: none;
+    font-size: 22px;
+    box-sizing: border-box;
+    font-weight: 600;
+    background-color: var(--ui-dark-shade-color);
+    margin: 15px 0px 0px 10px;
+    padding: 0;
 }
 
 .button {
