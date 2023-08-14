@@ -1,7 +1,6 @@
 .prize {
     background: url(/img/win/pattern.webp) no-repeat center #000000;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
     padding: 90px 0 100px;
@@ -39,4 +38,9 @@
 .prize__button:hover {
     background-color: white;
     color: #838383;
+}
+@media (min-width: 767px) {
+    .prize__advert {
+        width: 50%;
+    }
 }

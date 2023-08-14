@@ -16,8 +16,6 @@
     margin: 0 60px;
     background: white;
     position: absolute;
-    width: 600px;
-    height: 300px;
     padding: 40px 40px;
 }
 .career__intro {
@@ -46,4 +44,9 @@
 }
 .career__button:hover {
     background-color: #2fddf5;
+}
+@media (min-width: 767px) {
+    .career__content {
+        width: 50%;
+    }
 }
