@@ -7,17 +7,11 @@
     max-width: 100%;
     word-wrap: break-word;
     text-align: center;
-    display: block;
     margin: 20px 20px 20px 20px;
     padding: 0;
 }
 
-.latest-news__menu {
-    margin: 15px 15px 15px 15px;
-    padding: 0;
-}
-
-.latest-news__menu-item picture .picture__image {
+.picture__image {
     display: block;
     max-width: 100%;
 }
@@ -25,14 +19,11 @@
 .picture__details {
     margin: 30px 0px 0px 0px;
     padding: 20px 20px 20px 20px;
-    text-align: left;
-    font-size: 23px;
     background-color: var(--ui-dark-shade-color);
-    background-size: url(../img/latest-news/leaves.jpg) 40% /contain;
-    background-image:  botton no-repeat;
+    box-sizing: border-box;
 }
 
-.picture__details .picture__category {
+.picture__category {
     font-family: 'Montserrat', sans-serif;
     color: var(--second-hover-color);
     text-align: left;
@@ -44,7 +35,8 @@
     line-height: 28px;
     padding-bottom: 30px;
 }
-.picture__details .picture__title {
+
+.picture__title {
     font-family: 'Montserrat', sans-serif;
     color: var(--ui-light-shade-color);
     text-align: left;
@@ -61,14 +53,14 @@
     background-color: var(--second-hover-color);
     color: var(--ui-dark-accent-color);
     border-radius: 28px ;
-    min-width: 100px;
-    padding: auto;
+    padding: 10px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .button:hover {
