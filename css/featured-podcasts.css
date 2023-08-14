@@ -1,0 +1,20 @@
+.featured-postcads__cards{
+    background-color: var(--ui-light-shade-color);
+}
+
+.button{
+    background-color: var(--ui-light-shade-color);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.button:hover {
+    color: #ffffff;
+    background-color: var(--brend-color-gradient);
+    transition: color 0.5s ease;
+}
