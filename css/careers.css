@@ -1,0 +1,52 @@
+.career {
+    position: relative;
+    height: 650px;
+    padding: 100px 0;
+}
+.career__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("/img/careers/pattern-career.webp") 44.38% 100% / cover no-repeat fixed, rgb(0, 0, 0);
+    z-index: -1;
+}
+.career__content {
+    margin: 0 60px;
+    background: white;
+    position: absolute;
+    padding: 40px 40px;
+}
+.career__intro {
+    font: 14px 'Montserrat', sans-serif;
+    color: #838383;
+}
+.career__title {
+    font: 38px 'Montserrat', sans-serif;
+    color: black;
+    margin: 10px 0;
+}
+.career__info {
+    font: 16px 'Montserrat', sans-serif;
+    color: #838383;
+    margin-bottom: 20px;
+}
+.career__button {
+    padding: 10px 20px;
+    background-color: #1faff9;
+    color: #fff;
+    font: 14px 'Montserrat', sans-serif;
+    text-decoration: none;
+    border-radius: 28px;
+    transition: background-color 0.5s ease;
+    display: inline-block;
+}
+.career__button:hover {
+    background-color: #2fddf5;
+}
+@media (min-width: 767px) {
+    .career__content {
+        width: 50%;
+    }
+}
