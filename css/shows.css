@@ -18,7 +18,7 @@
     }
 }
 
-.shows-card .card {
+.shows-card {
     background-color: var(--ui-light-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
     border-radius: 5px;
@@ -27,11 +27,12 @@
     text-align: center;
 }
 
-.shows__card-image {
+.shows .shows-card__image {
     width: 720px;
     height: 369px;
     object-fit: cover;
     min-height: 140px;
+    object-position: 50% 0%;
 }
 
 .shows__card-title {
