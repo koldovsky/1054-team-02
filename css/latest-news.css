@@ -15,56 +15,73 @@
     padding: 0;
 }
 
-@media (min-width: 770px) {
-    .latest-news__cards {
+@media (min-widht:1000px) {
+    .latest-news__item .product {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        gap: 20px;
-        margin-top: 30px;
+        gap: 15px ;
     }
+    
 }
-
-@media (min-width: 1000px) {
-    .latest-news__cards {
-        display: grid;
-        grid-template-columns:  1fr  auto;
-        grid-template-rows: auto 1fr;
-    }
-}
-.latest-news__card {
-    background-color: var(--ui-dark-shade-color);
-    border-bottom-color: var(--ui-light-shade-color);
-    border-radius: 5px;
-    padding: 20px;
+.latest-news__item .product {
+    display: grid;
+    grid-template-columns: auto;
     color: var(--ui-light-shade-color);
-    text-align: center;
+    margin-top: 40px;
+    gap: 24px;
 }
 
-.latest-news__card .card__image {
-    width: 720px;
-    height: 369px;
+  .product__image-container {
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
     object-fit: cover;
-    min-height: 140px;
+    overflow: hidden;
 }
 
-.latest-news__card .card__title {
+.product__image { 
+    height: auto;
+    display: block;
+}
+
+.product__title {
     padding: 10px 0px;
     margin-top: 15px;
     color: var(--second-hover-color);
     text-align: left;
+    background-color: black;
+    font-weight: 400;
+    width: 600px;
+    height: 28px;
+    box-sizing: border-box;
 }
 
-.latest-news__card  .card__text {
+.product__text {
     padding: 10px 0px;
     color: var(--ui-light-shade-color);
     text-align: left;
+    background-color: black;
+    font-weight: 600;
+    width: 600px;
+    height: 64px;
+    box-sizing: border-box;
 }
 
-.latest-news__button-container .latest-news__button-link {
+.latest-news__button container {
+    display: block;
+    display: flex;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.latest-news__button-link {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 12px;
