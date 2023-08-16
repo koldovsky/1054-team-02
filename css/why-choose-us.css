@@ -1,17 +1,17 @@
-.whu-choose-us {
+.why-choose-us {
     background-color: var(--ui-dark-shade-color);
     padding: 85px 0;
     text-align: center;
 }
 
-.whu-choose-us__title {
+.why-choose-us__title {
     font-size: 30px;
     color: var(--ui-light-shade-color);
 
 }
 
 @media (min-width: 770px) {
-    .whu-choose-us__cards {
+    .why-choose-us__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -19,7 +19,7 @@
     }
 }
 
-.whu-choose-us-card {
+.why-choose-us-card {
     background-color: var(--ui-dark-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
     border-radius: 5px;
@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-.whu-choose-us .card__image {
+.why-choose-us .card__image {
     object-position: 50% 0%;
     width: 720px;
     height: 369px;
@@ -49,17 +49,17 @@
     text-align: left;
 }
 
-.whu-choose-us-button-container:hover a {
+.why-choose-us-button-container:hover a {
     color: var(--ui-dark-shade-color);
 }
 
-.whu-choose-us-button-container:hover {
+.why-choose-us-button-container:hover {
     background-color: var(--ui-light-shade-color);
     text-decoration-color: var(--ui-dark-shade-color);
 
 }
 
-.whu-choose-us-button-container {
+.why-choose-us-button-container {
     display: inline-block;
     width: 180px;
     background-color: var(--ui-dark-shade-color);
