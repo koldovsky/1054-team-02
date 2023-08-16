@@ -50,18 +50,18 @@
     background-color: var(--brend-color-gradient);
     color: #ffffff;
 }
-@media (min-widht: 600px){
+@media (min-width: 600px){
     .featured-podcasts__cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-widht: 900px){
+@media (min-width: 900px){
     .featured-podcasts__cards{
         grid-template-columns:1fr 1fr 1fr;
     }
 }
-@media (min-widht: 1080px){
+@media (min-width: 1080px){
     .featured-podcasts__cards{
         grid-template-columns:1fr 1fr 1fr 1fr;
     }
