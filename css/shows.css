@@ -1,6 +1,6 @@
 .shows {
     background-color: var(--ui-light-shade-color);
-    padding: 85px 0;
+    padding: 90px 0 95px 0;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@
     }
 }
 
-.shows-card {
+.shows-card .card {
     background-color: var(--ui-light-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
     border-radius: 5px;
