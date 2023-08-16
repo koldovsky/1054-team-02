@@ -1,5 +1,5 @@
 .prize {
-    background: url(/img/win/pattern.webp) no-repeat center #000000;
+    background: url("../img/win/pattern.webp") no-repeat center #000000;
     display: flex;
     align-items: center;
     position: relative;
