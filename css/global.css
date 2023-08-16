@@ -1,29 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --brend-color: #1faff9;
-    --brend-color-gradient: #2fddf5; 
-    --ui-dark-accent-color: #838383;
-    --ui-dark-shade-color: #000;
-    --ui-light-shade-color: #fff;
-    --first-hover-color: #13bde3;
-    --second-hover-color: #e6e6e6;
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+  --brend-color: #1faff9;
+  --brend-color-gradient: #2fddf5;
+  --ui-dark-accent-color: #838383;
+  --ui-dark-shade-color: #000;
+  --ui-light-shade-color: #fff;
+  --first-hover-color: #13bde3;
+  --second-hover-color: #e6e6e6;
+  --cards-background-color: #1ea9f1;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    max-width: 1170px;
-    margin: auto;
+  max-width: 1170px;
+  margin: auto;
+  padding: 0px 15px;
 }

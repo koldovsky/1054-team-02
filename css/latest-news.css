@@ -1,4 +1,8 @@
-.container {
+.latest-news {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .latest-news__title {
@@ -11,58 +15,70 @@
     padding: 0;
 }
 
-.picture__image {
-    display: block;
-    max-width: 100%;
+@media (min-width: 770px) {
+    .latest-news__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        margin-top: 30px;
+    }
 }
 
-.picture__details {
-    margin: 30px 0px 0px 0px;
-    padding: 20px 20px 20px 20px;
+@media (min-width: 1000px) {
+    .latest-news__cards {
+        display: grid;
+        grid-template-columns:  1fr  auto;
+        grid-template-rows: auto 1fr;
+    }
+}
+.latest-news__card {
     background-color: var(--ui-dark-shade-color);
-    box-sizing: border-box;
+    border-bottom-color: var(--ui-light-shade-color);
+    border-radius: 5px;
+    padding: 20px;
+    color: var(--ui-light-shade-color);
+    text-align: center;
 }
 
-.picture__category {
-    font-family: 'Montserrat', sans-serif;
+.latest-news__card .card__image {
+    width: 720px;
+    height: 369px;
+    object-fit: cover;
+    min-height: 140px;
+}
+
+.latest-news__card .card__title {
+    padding: 10px 0px;
+    margin-top: 15px;
     color: var(--second-hover-color);
     text-align: left;
-    text-transform: none;
-    font-size: 14px;
-    box-sizing: border-box;
-    font-weight: 400;
-    background-color: var(--ui-dark-shade-color);
-    line-height: 28px;
-    padding-bottom: 30px;
 }
 
-.picture__title {
-    font-family: 'Montserrat', sans-serif;
+.latest-news__card  .card__text {
+    padding: 10px 0px;
     color: var(--ui-light-shade-color);
     text-align: left;
-    text-transform: none;
-    font-size: 22px;
-    box-sizing: border-box;
-    font-weight: 600;
-    background-color: var(--ui-dark-shade-color);
-    margin: 15px 0px 0px 10px;
-    padding: 0;
 }
 
-.button {
-    background-color: var(--second-hover-color);
-    color: var(--ui-dark-accent-color);
-    border-radius: 28px ;
-    padding: 10px 20px;
+.latest-news__button-container .latest-news__button-link {
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
+    position: relative;
+    max-width: 100%;
     cursor: pointer;
-    box-sizing: border-box;
-    display: inline-block;
+    color: var(--second-hover-color);
+    font-weight: 500;
+    border-radius: 28px;
+    padding: 5px 15px;
 }
 
-.button:hover {
-    background-color: var(--first-hover-color);
+.latest-news-button-link:hover {
+    text-decoration-color: var(--brend-color-gradient);
 }
