@@ -1,12 +1,12 @@
 .whu-choose-us {
-    background-color: black;
+    background-color: var(--ui-dark-shade-color);
     padding: 85px 0;
     text-align: center;
 }
 
 .whu-choose-us__title {
     font-size: 30px;
-    color: white;
+    color: var(--ui-light-shade-color);
 
 }
 
@@ -19,7 +19,7 @@
     }
 }
 
-.card {
+.whu-choose-us-card {
     background-color: var(--ui-dark-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
     border-radius: 5px;
@@ -28,7 +28,8 @@
     text-align: center;
 }
 
-.card__image {
+.whu-choose-us .card__image {
+    object-position: 50% 0%;
     width: 720px;
     height: 369px;
     object-fit: cover;
@@ -48,9 +49,13 @@
     text-align: left;
 }
 
+.whu-choose-us-button-container:hover a {
+    color: var(--ui-dark-shade-color);
+}
+
 .whu-choose-us-button-container:hover {
-    background-color: white;
-    text-decoration-color: black;
+    background-color: var(--ui-light-shade-color);
+    text-decoration-color: var(--ui-dark-shade-color);
 
 }
 
