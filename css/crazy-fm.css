@@ -1,5 +1,5 @@
 .crazy-fm {
-    background: url(/img/careers/pattern-career.webp) 47.5% 100% / cover no-repeat, rgb(0, 0, 0);
+    background: url(../img/careers/pattern-career.webp) 47.5% 100% / cover no-repeat, rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     gap: 60px;
