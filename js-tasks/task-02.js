@@ -4,4 +4,4 @@ function makeNegative(num) {
   } else {
     return num;
   }
-}
+}// Любомир
