@@ -14,3 +14,7 @@ function makeNegative(num) {
     return - num;
   }
 } // Аня
+
+function makeNegative(num) {
+  return -Math.abs(num)
+ } //Валентина

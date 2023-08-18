@@ -10,3 +10,10 @@ function greet (name, owner) {
       return 'Hello guest';
     }
   } // Аня
+
+  function greet (name, owner) {
+    if( name === owner) {
+      return 'Hello boss'
+    }
+      return 'Hello guest'
+    } //Валентина
