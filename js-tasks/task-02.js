@@ -65,7 +65,7 @@ function cockroachSpeed(s) {
 
 //https://www.codewars.com/kata/5a023c426975981341000014/train/javascript
 function otherAngle(a, b) {
-  return 180-(a+b);
+  return 180 - (a + b);
 }
 
 //https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
@@ -75,7 +75,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
 //https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
 function nthEven(n) {
-  return (n-1) * 2;
+  return (n - 1) * 2;
 }
 
 //https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
