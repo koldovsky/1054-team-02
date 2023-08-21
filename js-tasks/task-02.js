@@ -3,29 +3,14 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
-function stringToArray(string){
-	return string.split(' ');
-} // Аня
-
 //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
 
-function DNAtoRNA(dna) {
-  return dna.replace(/T/g, 'U');
-} // Аня
-
 //https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
-
-const min = list => {
-  return Math.min(...list);
-}
-const max = list => {
-  return Math.max(...list);
-} // Аня
 
 //https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
@@ -33,11 +18,6 @@ function min(arr, toReturn) {
     ? Math.min(...arr)
     : arr.indexOf(Math.min(...arr));
 }
-
-function min(arr, toReturn) {
-  if (toReturn === 'value') return Math.min(...arr);
-  return arr.indexOf(Math.min(...arr));
-} // Аня
 
 //Поглиблені задачі :
 //https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
