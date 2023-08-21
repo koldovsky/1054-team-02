@@ -4,7 +4,7 @@ function stringToArray(string) {
 }
 
 function stringToArray(string){
-	return string.split(' ')
+	return string.split(' ');
 } // Аня
 
 //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
@@ -13,7 +13,7 @@ function DNAtoRNA(dna) {
 }
 
 function DNAtoRNA(dna) {
-  return dna.replace(/T/g, 'U')
+  return dna.replace(/T/g, 'U');
 } // Аня
 
 //https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -35,8 +35,8 @@ function min(arr, toReturn) {
 }
 
 function min(arr, toReturn) {
-  if (toReturn === 'value') return Math.min(...arr)
-  return arr.indexOf(Math.min(...arr))
+  if (toReturn === 'value') return Math.min(...arr);
+  return arr.indexOf(Math.min(...arr));
 } // Аня
 
 //Поглиблені задачі :
