@@ -1,6 +1,6 @@
 .header {
     background-color: var(--ui-dark-shade-color);
-    padding: 10px 40px;
+    padding: 15px 25px;
 }
 
 .header__menu {
@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
 }
 
