@@ -34,7 +34,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--ui-light-shade-color);
-    transition: all 0.5s ease-in-out;    
+    transition: all 0.5s ease-in-out;
 }
 
 .header__nav-line {
@@ -47,11 +47,25 @@
 }
 
 .header__nav-line::before {
-    top: -6px;    
+    top: -6px;
 }
 
 .header__nav-line::after {
-    bottom: -6px;    
+    bottom: -6px;
+}
+
+.header__nav-line.active {
+    transform: scale(0);
+}
+
+.header__nav-burger.active .header__nav-line::before {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.header__nav-burger.active .header__nav-line::after {
+    bottom: 40%;
+    transform: rotate(45deg);
 }
 
 .header__nav-menu,
