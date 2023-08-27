@@ -1,8 +1,9 @@
 .latest-news {
     display: block;
     box-sizing: border-box;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--second-hover-color);
 }
 
 .latest-news__title {
@@ -18,20 +19,42 @@
 @media (min-width: 770px) {
     .latest-news__cards {
        display: grid;
-       gap: 10px;
+       gap: 30px;
+       grid-template-columns: repeat(12, 1fr [col-start]);
     }
-}
 
+       .latest-news__cards-item:nth-child(1) {
+        grid-column: span 12;
+        grid-row: span 2;
+    }
+
+       .latest-news__cards-item:nth-child(2) {
+        grid-column: span 6;
+    }
+ 
+       .latest-news__cards-item:nth-child(3) {
+        grid-column: span 6;
+       }
+} 
+    
 @media (min-width: 980px) {
     .latest-news__cards {
         display: grid;
-        gap: 10px;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        grid-template-columns: repeat(12, 1fr [col-start]);
     }
 
-    .latest-news__cards-item:nth-child(1) {
-        grid-row: span 3;
+       .latest-news__cards-item:nth-child(1) {
+        grid-column: span 7;
+        grid-row: span 2;
+    }
+
+       .latest-news__cards-item:nth-child(2) {
+        grid-column: span 5;
+       }
+
+       .latest-news__cards-item:nth-child(3) {
+        grid-column: span 5;
     }
 }
 
@@ -42,7 +65,7 @@
     margin-left: 15px;
     margin-bottom: 50px;
     box-sizing: border-box;
-    display: grid;
+    display: flex;
     overflow-wrap: break-word;
     position: relative;
 }
@@ -51,20 +74,33 @@
     box-sizing: border-box;
     overflow-wrap: break-word;
     display: grid;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
 }
 
 .product__image {
-    padding: 20px;
     object-position: 50% 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.product__category {
+    box-sizing: border-box;
+    background-color: var(--ui-dark-shade-color);
+    display: block;
+    overflow-wrap: break-word;
+    padding: 40px;
+}
+
 .product__title {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    padding-left: 35px;
+    padding-left: 10px;
     margin-top: 15px;
     box-sizing: border-box;
     display: block;
@@ -83,9 +119,10 @@
     display: block;
     box-sizing: border-box;
     overflow-wrap: break-word;
-    padding-left: 35px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
+    color: var(--ui-light-shade-color);
 }
 
 .latest-news__button {
