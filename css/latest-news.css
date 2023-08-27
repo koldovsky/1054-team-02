@@ -15,26 +15,56 @@
     padding: 0;
 }
 
-.latest-news__list-item product {
-    padding: 15px 15px 15px 15px;
-    box-sizing: border-box;
-    display: block;
+@media (min-width: 770px) {
+    .latest-news__cards {
+       display: grid;
+       gap: 10px;
+    }
+}
 
+@media (min-width: 980px) {
+    .latest-news__cards {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .latest-news__cards-item:nth-child(1) {
+        grid-row: span 3;
+    }
+}
+
+.latest-news__cards-item .product {
+    padding: 15px 15px 15px 15px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    display: grid;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+.latest-news__cards {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    display: grid;
 }
 
 .product__image {
-    object-position: 50% 0%;
-    width: auto;
-    height: auto;
+    padding: 20px;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    min-height: 140px;
 }
-
 
 .product__title {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    padding: 10px 0;
+    padding-left: 35px;
     margin-top: 15px;
     box-sizing: border-box;
     display: block;
@@ -53,9 +83,9 @@
     display: block;
     box-sizing: border-box;
     overflow-wrap: break-word;
-    height: auto;
-    width: auto;
-    color: ;
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-top: 10px;
 }
 
 .latest-news__button {
