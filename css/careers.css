@@ -1,6 +1,5 @@
 .career {
     position: relative;
-    height: 615px;
     padding: 100px 0;
 }
 
@@ -15,9 +14,10 @@
 }
 
 .career__content {
-    margin: 0 60px;
+    margin: 75px 15%;
+    padding: 2rem;
+    max-width: 1200px;
     background: var(--ui-light-shade-color);
-    position: absolute;
 }
 
 .career__intro {
@@ -54,6 +54,12 @@
 
 @media (min-width: 768px) {
     .career__content {
-        width: 30%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .career__content {
+        width: 40%;
     }
 }
