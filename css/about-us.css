@@ -1,4 +1,41 @@
-.about-us {
+.about-crazy-fm {
     background-color: var(--ui-dark-shade-color);
+    padding: 90px 0;
+}
 
+.about-crazy-fm__logo {
+    display: flex;
+    width: 272px;
+    height: 191.21px;
+    margin: auto;
+}
+
+.about-crazy-fm__title {
+    color: var(--ui-light-shade-color);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-crazy-fm__description {
+    color: var(--ui-dark-accent-color);
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 25px;
+    word-wrap: break-word;
+}
+
+@media (min-width: 272px) {
+    .about-crazy-fm__logo {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-crazy-fm__description {
+        font-size: var(--ui-text-size-mobile);
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
 }

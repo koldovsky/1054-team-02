@@ -19,7 +19,7 @@
 @media (min-width: 770px) {
     .latest-news__cards {
        display: grid;
-       gap: 30px;
+       gap: 15px;
        grid-template-columns: repeat(12, 1fr [col-start]);
     }
 
@@ -40,7 +40,7 @@
 @media (min-width: 980px) {
     .latest-news__cards {
         display: grid;
-        gap: 30px;
+        gap: 15px;
         grid-template-columns: repeat(12, 1fr [col-start]);
     }
 
@@ -58,14 +58,14 @@
     }
 }
 
-.latest-news__cards-item .product {
+.latest-news__cards .product {
     padding: 15px 15px 15px 15px;
     margin-top: 0;
     margin-left: 15px;
     margin-left: 15px;
     margin-bottom: 50px;
     box-sizing: border-box;
-    display: flex;
+    display: block;
     overflow-wrap: break-word;
     position: relative;
 }
