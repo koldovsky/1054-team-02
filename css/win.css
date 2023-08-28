@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 90px 0 100px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .prize__logo {
@@ -11,14 +12,19 @@
 }
 
 .prize__advert{
-   margin: 0 22.5px;
-   padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .prize__title {
     font: 38px 'Montserrat', sans-serif;
     margin-bottom: 10px;
     color: var(--ui-light-shade-color);
+}
+.prize__info-content {
+    margin-top: 40px;
 }
 
 .prize__info {
@@ -31,14 +37,17 @@
 .prize__button {
     font: 12px 'Montserrat', sans-serif;
     padding: 12px 24px;
-    margin: -5px;
     color: var(--ui-light-shade-color);
     text-decoration: none;
-    border-radius: 28px;
     display: inline-block;
+    border-radius: 28px;
     cursor: pointer;
     border: 1px solid var(--ui-light-shade-color);
     transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 10px 36px 1.1px var(--ui-dark-gray);
+}
+.prize__advert-footer {
+    margin-top: 55px;
 }
 
 .prize__button:hover {
@@ -47,7 +56,7 @@
 }
 
 @media (min-width: 768px) {
-    .prize__advert {
-        width: 50%;
+    .prize__advert-content {
+        width: 58%;
     }
 }
