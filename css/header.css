@@ -1,4 +1,4 @@
-.header {    
+.header {
     background-color: var(--ui-dark-shade-color);
     padding: 15px 25px;
 }
@@ -121,6 +121,11 @@
     color: var(--ui-light-shade-color);
 }
 
+.header__nav-link:hover {
+    color: var(--first-hover-color);
+    cursor: pointer;
+}
+
 .header__frequency {
     color: var(--ui-light-shade-color);
     font-weight: 500;
@@ -153,7 +158,7 @@
         position: absolute;
         top: 0;
         transition: none;
-        height: 0;        
+        height: 0;
         padding-bottom: 20px;
     }
 
