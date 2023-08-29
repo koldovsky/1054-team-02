@@ -1,52 +1,65 @@
 .career {
     position: relative;
-    height: 650px;
     padding: 100px 0;
 }
+
 .career__logo {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("/img/careers/pattern-career.webp") 44.38% 100% / cover no-repeat fixed, rgb(0, 0, 0);
+    background: url("../img/careers/pattern-career.webp") 44.38% 100% / cover no-repeat fixed, rgb(0, 0, 0);
     z-index: -1;
 }
+
 .career__content {
-    margin: 0 60px;
-    background: white;
-    position: absolute;
-    padding: 40px 40px;
+    margin: 75px 15%;
+    padding: 2rem;
+    max-width: 1200px;
+    background: var(--ui-light-shade-color);
 }
+
 .career__intro {
     font: 14px 'Montserrat', sans-serif;
-    color: #838383;
+    color: var(--ui-dark-accent-color);
 }
+
 .career__title {
     font: 38px 'Montserrat', sans-serif;
-    color: black;
+    color: var(--ui-dark-shade-color);
     margin: 10px 0;
 }
+
 .career__info {
     font: 16px 'Montserrat', sans-serif;
-    color: #838383;
+    color: var(--ui-dark-accent-color);
     margin-bottom: 20px;
 }
+
 .career__button {
     padding: 10px 20px;
-    background-color: #1faff9;
-    color: #fff;
+    background-color: var(--brend-color);
+    color: var(--ui-light-shade-color);
     font: 14px 'Montserrat', sans-serif;
     text-decoration: none;
     border-radius: 28px;
     transition: background-color 0.5s ease;
     display: inline-block;
 }
+
 .career__button:hover {
-    background-color: #2fddf5;
+    background-color: var(--brend-color-gradient);
 }
-@media (min-width: 767px) {
+
+@media (min-width: 768px) {
     .career__content {
         width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .career__content {
+        width: 40%;
     }
 }

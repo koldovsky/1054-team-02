@@ -54,10 +54,9 @@
 
 @media (min-width: 991px) {
     .footer__menu {
-        
         justify-content: space-between;
-        
     }
+
     .footer__nav-list {
         flex-direction: row;
     }
