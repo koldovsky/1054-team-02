@@ -76,20 +76,21 @@
 
 .header__nav-wrapper {
     position: fixed;
-    top: -100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: var(--ui-dark-shade-color);
     z-index: 2;
-    /* transition: top 0.5s ease-in 0.1s; */
     overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
     margin: auto;
     padding-top: 150px;
 }
 
 .header__nav-wrapper.active {
-    top: 0;
+    transform: translateY(0);
 }
 
 .header__social-icon {
@@ -152,16 +153,21 @@
 }
 
 @media (min-width: 992px) {
+    .header {
+        height: 0;
+    }
+
     .header__nav-burger {
         display: none;
     }
 
     .header__nav-wrapper {
-        position: absolute;
-        top: 0;
+        position: relative;
+        top: 59px;
         transition: none;
         height: 0;
         padding-bottom: 20px;
+        background-color: initial;
     }
 
     .header__logo {
