@@ -14,7 +14,6 @@
     z-index: -1;
 }
 
-
 .career__content_advert {
     margin: 0 auto;
     max-width: 1200px;
@@ -22,36 +21,45 @@
 }
 
 .career__content {
-    padding: 35px 30px;
-    width: 55%;
+    padding: 40px 30px;
+    width: 100%;
     background: var(--ui-light-shade-color);
 }
 
 .career__intro {
-    font: 14px 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
     color: var(--ui-dark-accent-color);
 }
 
 .career__title {
-    font-weight: 700;
-    font: 34px 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
     color: var(--ui-dark-shade-color);
-    margin: 15px 0;
+    margin: 15px 0 0;
+    width: 100%;
+    display: inline-block;
 }
 
 .career__info {
-    font: 16px 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     color: var(--ui-dark-accent-color);
-    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .career__button {
-    padding: 10px 20px;
+    margin: 40px 0 0;
+    padding: 16px 24px;
     background-color: var(--brend-color);
     color: var(--ui-light-shade-color);
-    font: 14px 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     border-radius: 28px;
+    border-width: 1px;
     transition: background-color 0.5s ease;
     display: inline-block;
 }
@@ -61,17 +69,21 @@
 }
 
 @media (min-width: 768px) {
+    .career__info {
+        margin-top: 40px;
+    }
+
     .career__content {
         padding-top: 40px;
         padding-bottom: 40px;
-        width: 50%;
+        width: 40%;
     }
 }
 
 @media (min-width: 992px) {
     .career__content {
         padding-top: 50px;
-        padding-bottom: 50px;
-        width: 40%;
+        padding-bottom: 52px;
+        width: 48%;
     }
 }
