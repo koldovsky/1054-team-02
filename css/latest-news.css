@@ -1,9 +1,8 @@
 .latest-news {
-    display: block;
-    box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: var(--second-hover-color);
+    text-align: center;
 }
 
 .latest-news__title {
