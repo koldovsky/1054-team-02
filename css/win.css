@@ -24,6 +24,11 @@
     padding: 0 15px;
 }
 
+#runText{
+    position: relative;
+    cursor: pointer;
+}
+
 .prize__title {
     font: 38px 'Montserrat', sans-serif;
     margin-bottom: 10px;
