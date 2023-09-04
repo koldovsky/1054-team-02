@@ -17,6 +17,7 @@
   --second-hover-color: #e6e6e6;
   --cards-background-color: #1ea9f1;
   --ui-text-size-mobile: 16px;
+  --ui-block-title-mobile-letter-spacing: 0;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
