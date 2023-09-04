@@ -27,7 +27,7 @@
 .news__cards {
     box-sizing: border-box;
     overflow-wrap: break-word;
-    display: grid;
+    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -62,7 +62,7 @@
 .component__image {
     object-position: 50% 50%;
     width: auto;
-    height: auto;
+    height: 75%;
     object-fit: cover;
     min-height: 140px;
 }
