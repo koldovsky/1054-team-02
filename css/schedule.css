@@ -89,3 +89,13 @@
 .accordion-content p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .accordion-content {
+      display: none;
+    }
+    .schedule__row.active .accordion-content {
+      display: block;
+    }
+  }
+
