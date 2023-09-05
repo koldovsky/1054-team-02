@@ -4,4 +4,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./win-animate.js');
     import('./schedule-accordion.js');
     import('./latest-news.js');
+    import('./contact-form.js');
 });
