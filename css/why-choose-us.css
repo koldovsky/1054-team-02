@@ -1,53 +1,81 @@
-.whu-choose-us {
-    background-color: black;
-    padding: 85px 0px 100px 0px;
+.why-choose-us {
+    background-color: var(--ui-dark-shade-color);
+    padding: 85px 0;
+    text-align: center;
 }
 
-.whu-choose-us__title {
+.why-choose-us__title {
     font-size: 30px;
-    text-align: center;
     color: var(--ui-light-shade-color);
+
 }
 
 @media (min-width: 770px) {
-    .whu-choose-us__cards {
+    .why-choose-us__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin-top: 20px;
     }
 }
 
-.card {
+.why-choose-us-card {
     background-color: var(--ui-dark-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
-    border-radius: 0px;
-    padding: 0px 15px; 
+    border-radius: 5px;
+    padding: 15px;
     color: var(--ui-light-shade-color);
-    margin-top: 30px;
+    text-align: center;
 }
 
-.card__image {
-   max-height: 292px;
-    width: 570px;
+.why-choose-us-card__image {
+    object-position: 50% 0%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    min-height: 140px;
 }
 
-.button {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    border-radius: 100px;
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
-    padding: 10px 20px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    cursor: pointer;
+.card__title {
+    padding: 10px 0px;
+    margin-top: 15px;
+    color: var(--ui-light-shade-color);
+    text-align: left;
+}
+
+.card__text {
+    padding: 10px 0px;
+    color: var(--ui-dark-accent-color);
+    text-align: left;
+}
+
+.why-choose-us-button-container:hover a {
+    color: var(--ui-dark-shade-color);
+}
+
+.why-choose-us-button-container:hover {
+    background-color: var(--ui-light-shade-color);
+    text-decoration-color: var(--ui-dark-shade-color);
+
+}
+
+.why-choose-us-button-container {
     display: inline-block;
+    width: 180px;
+    background-color: var(--ui-dark-shade-color);
+    color: var(--ui-light-shade-color);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--ui-light-shade-color);
+    border-radius: 28px;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
 }
 
-.button:hover {
-    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.8);
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.why-choose-us__link {
+    text-decoration: none;
+    color: var(--ui-light-shade-color);
 }

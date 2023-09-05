@@ -1,45 +1,84 @@
-<p class="schedule">Schedule</p>
-<section class="schedule">
-    <table class="schedule__table">
-        <tr class="schedule__row">
-            <th class="schedule__heading">Days</th>
-            <th class="schedule__heading">Time</th>
-            <th class="schedule__heading">Program</th>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">7:00am - 9:00am</td>
-            <td class="schedule__data">Colin's Cuts</td>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">9:00am - 11:00am</td>
-            <td class="schedule__data">Emporium of Delights</td>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">11:00am - 1:00pm</td>
-            <td class="schedule__data">The Sound Lab Show</td>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">1:00pm - 3:00pm</td>
-            <td class="schedule__data">Throwdown Show</td>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">3:00pm - 5:00pm</td>
-            <td class="schedule__data">Vintage Remix Show</td>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">5:00pm - 7:00pm</td>
-            <td class="schedule__data">Dub You Sexy</td>
-        </tr>
-        <tr class="schedule__row">
-            <td class="schedule__data">Mon - Fri</td>
-            <td class="schedule__data">7:00pm - 9:00pm</td>
-            <td class="schedule__data">Groove Motion Radio Show</td>
-        </tr>
-    </table>
-</section>
+<div class="schedule-container">
+    <h2 class="schedule">Schedule</h2>
+    <section class="schedule">
+        <div class="schedule__table-container">
+            <table class="schedule__table">
+                <thead>
+                    <tr>
+                        <th class="schedule__heading">Days</th>
+                        <th class="schedule__heading">Time</th>
+                        <th class="schedule__heading">Program</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="schedule__row accordion-toggle">
+                        <td class="schedule__data">Monday - Friday</td>
+                        <td class="schedule__time">7:00am - 9:00am</td>
+                        <td class="schedule__program">Colin's Cuts</td>
+                    </tr>
+
+                        <tr class="schedule__row accordion-toggle">
+                            <td class="schedule__data">Mon - Fri</td>
+                            <td class="schedule__time">9:00am - 11:00am</td>
+                            <td class="schedule__program">Emporium of Delights</td>
+                        </tr>
+                        <tr class="schedule__row accordion-toggle">
+                            <td class="schedule__data">Mon - Fri</td>
+                            <td class="schedule__time">11:00am - 1:00pm</td>
+                            <td class="schedule__program">The Sound Lab Show</td>
+                        </tr>
+                        <tr class="schedule__row accordion-toggle">
+                            <td class="schedule__data">Mon - Fri</td>
+                            <td class="schedule__time">1:00pm - 3:00pm</td>
+                            <td class="schedule__program">Throwdown Show</td>
+                        </tr>
+                        <tr class="schedule__row accordion-toggle">
+                            <td class="schedule__data">Mon - Fri</td>
+                            <td class="schedule__time">3:00pm - 5:00pm</td>
+                            <td class="schedule__program">Vintage Remix Show</td>
+                        </tr>
+                        <tr class="schedule__row accordion-toggle">
+                            <td class="schedule__data">Mon - Fri</td>
+                            <td class="schedule__time">5:00pm - 7:00pm</td>
+                            <td class="schedule__program">Dub You Sexy</td>
+                        </tr>
+                        <tr class="schedule__row accordion-toggle">
+                            <td class="schedule__data">Mon - Fri</td>
+                            <td class="schedule__time">7:00pm - 9:00pm</td>
+                            <td class="schedule__program">Groove Motion Radio Show</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <div class="accordion-content">
+                    <p class="schedule__time">7:00am - 9:00am</p>
+                    <p class="schedule__program">Colin's Cuts</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="schedule__time">9:00am - 11:00am</p>
+                    <p class="schedule__program">Emporium of Delights</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="schedule__time">11:00am - 1:00pm</p>
+                    <p class="schedule__program">The Sound Lab Show</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="schedule__time">1:00pm - 3:00pm</p>
+                    <p class="schedule__program">Throwdown Show</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="schedule__time">3:00pm - 5:00pm</p>
+                    <p class="schedule__program">Vintage Remix Show</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="schedule__time">5:00pm - 7:00pm</p>
+                    <p class="schedule__program">Dub You Sexy</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="schedule__time">7:00pm - 9:00pm</p>
+                    <p class="schedule__program">Groove Motion Radio Show</p>
+                </div>
+            </div>
+        </section>
+    </div>

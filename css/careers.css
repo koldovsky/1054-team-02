@@ -1,46 +1,89 @@
 .career {
     position: relative;
-    height: 500px;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.5);
 }
+
 .career__logo {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("/img/careers/pattern-career.webp") 44.38% 100% / cover no-repeat fixed, rgb(0, 0, 0)
+    background: url("../img/careers/pattern-career.webp") 44.38% 100% / cover no-repeat fixed, rgb(0, 0, 0);
+    z-index: -1;
 }
+
+.career__content_advert {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
 .career__content {
-    background: white;
-    position: absolute;
-    max-width: 600px;
-    padding: 50px;
+    padding: 40px 30px;
+    width: 100%;
+    background: var(--ui-light-shade-color);
 }
+
 .career__intro {
-    font-size: 24px;
-    font-weight: bold;
-    color: #838383;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ui-dark-accent-color);
 }
+
 .career__title {
-    font-size: 36px;
-    color: black;
-    margin: 10px 0;
-}
-.career__info {
-    font-size: 18px;
-    color: #838383;
-    margin-bottom: 20px;
-}
-.career__button {
+    font-weight: bold;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ui-dark-shade-color);
+    margin: 15px 0 0;
+    width: 100%;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #1faff9;
-    color: #fff;
-    text-decoration: none;
-    border-width: 1px;
-    border-radius: 28px;
-    transition: background-color 0.5s ease;
 }
+
+.career__info {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ui-dark-accent-color);
+    line-height: 1.5;
+}
+
+.career__button {
+    margin: 40px 0 0;
+    padding: 16px 24px;
+    background-color: var(--brend-color);
+    color: var(--ui-light-shade-color);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border-radius: 28px;
+    border-width: 1px;
+    transition: background-color 0.5s ease;
+    display: inline-block;
+}
+
 .career__button:hover {
-    background-color: #2fddf5;
+    background-color: var(--brend-color-gradient);
+}
+
+@media (min-width: 768px) {
+    .career__info {
+        margin-top: 40px;
+    }
+
+    .career__content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+    .career__content {
+        padding-top: 50px;
+        padding-bottom: 52px;
+        width: 48%;
+    }
 }
