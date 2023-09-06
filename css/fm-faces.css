@@ -1,14 +1,18 @@
 .cards-title {
   text-align: center;
+  margin-top:50px;
 }
 .cards-items {
-  display: grid;
-  grid-template-columns: 1fr;
   color: var(--ui-light-shade-color);
   margin-top: 40px;
   gap: 24px;
+  flex-wrap:wrap;
+  display:flex;
+  justify-content: center;
 }
 .cards-item {
+  width:30%;
+  min-width:300px;
   padding: 65px 55px;
   display: flex;
   flex-direction: column;
@@ -19,6 +23,7 @@
   margin-bottom: 30px;
 }
 .cards-item__img {
+  transition:all .3s;
   object-fit: cover;
   object-position: top;
   margin: 30px auto;
@@ -27,14 +32,8 @@
   height: 130px;
 }
 
-@media (min-width: 768px) {
-  .cards-items {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1200px) {
-  .cards-items {
-    grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 375px) {
+  .cards-item {
+    min-width:342px;
   }
 }
