@@ -154,7 +154,7 @@
 
 @media (min-width: 992px) {
     .header {
-        height: 0;
+        max-height: 180px;
     }
 
     .header__nav-burger {
