@@ -1,4 +1,3 @@
-/* Загальні стилі для контейнера */
 .schedule-container {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
     background-color: #131313;
 }
 
-/* Заголовок розкладу */
+
 .schedule {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -19,7 +18,7 @@
     text-align: center;
 }
 
-/* Стилі для десктопної версії */
+
 .schedule.desktop {
     display: block;
 }
@@ -74,7 +73,7 @@
     vertical-align: top;
 }
 
-/* Стилі для мобільної версії (акордеону) */
+
 .schedule.mobile {
     display: none;
 }
@@ -120,7 +119,7 @@
     transform: rotate(90deg);
 }
 
-/* Медіа-запит для приховування таблиці на мобільних пристроях */
+
 @media (max-width: 768px) {
     .schedule.desktop {
         display: none;
