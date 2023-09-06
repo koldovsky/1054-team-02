@@ -1,7 +1,7 @@
 .career {
     position: relative;
-    height: 615px;
     padding: 100px 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .career__logo {
@@ -14,36 +14,62 @@
     z-index: -1;
 }
 
+.career__content_advert {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.career__content.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 4s ease, transform 4s ease;
+}
+
 .career__content {
-    margin: 0 60px;
+    padding: 40px 30px;
+    width: 100%;
     background: var(--ui-light-shade-color);
-    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+    transition-delay: 1.5s;
 }
 
 .career__intro {
-    font: 14px 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
     color: var(--ui-dark-accent-color);
 }
 
 .career__title {
-    font: 38px 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
     color: var(--ui-dark-shade-color);
-    margin: 10px 0;
+    margin: 15px 0 0;
+    width: 100%;
+    display: inline-block;
 }
 
 .career__info {
-    font: 16px 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     color: var(--ui-dark-accent-color);
-    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-top: 40px;
 }
 
 .career__button {
-    padding: 10px 20px;
+    margin: 40px 0 0;
+    padding: 16px 24px;
     background-color: var(--brend-color);
     color: var(--ui-light-shade-color);
-    font: 14px 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     border-radius: 28px;
+    border-width: 1px;
     transition: background-color 0.5s ease;
     display: inline-block;
 }
@@ -54,6 +80,17 @@
 
 @media (min-width: 768px) {
     .career__content {
-        width: 30%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 30px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .career__content {
+        padding-top: 50px;
+        padding-bottom: 52px;
+        width: 48%;
     }
 }
