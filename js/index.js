@@ -5,4 +5,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./schedule-accordion.js');
     import('./latest-news.js');
     import('./contact-form.js');
+    import('./careers-animate.js');
 });
