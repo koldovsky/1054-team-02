@@ -7,8 +7,6 @@ commentForm.addEventListener('submit', function (e) {
     const name = document.getElementById('name').value;
     const commentText = document.getElementById('comment').value;
     const rating = parseInt(document.getElementById('rating').value);
-
-    // Створюємо новий коментар у вигляді HTML-елемента
     const commentItem = document.createElement('li');
     commentItem.innerHTML = `
         <strong>${name}</strong> (Rating: ${rating}):<br>
