@@ -7,4 +7,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./contact-form.js');
     import('./careers-animate.js');
     import('./fm-faces-avatar-zoom.js');
+    import('/about-us.js');
 });
