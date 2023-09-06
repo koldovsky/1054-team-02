@@ -1,34 +1,29 @@
-// Отримуємо всі елементи з класом "accordion-toggle"
-const accordionToggles = document.querySelectorAll('.accordion-toggle');
+export default function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    var accordionToggles = document.querySelectorAll(".accordion-toggle");
 
-// Додаємо обробник подій для кожного елемента "accordion-toggle"
-accordionToggles.forEach((toggle) => {
-  toggle.addEventListener('click', () => {
-    // Знаходимо батьківський елемент "schedule__row"
-    const row = toggle.closest('.schedule__row');
-    
-    // Знаходимо всі елементи "accordion-content" в межах батьківського елемента
-    const content = row.querySelectorAll('.accordion-content');
-    
-    // Перевіряємо, чи активний акордеон
-    const isActive = row.classList.contains('active');
-    
-    // Закриваємо всі активні акордеони
-    accordionToggles.forEach((otherToggle) => {
-      otherToggle.closest('.schedule__row').classList.remove('active');
+    accordionToggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        var accordionContent = toggle.nextElementSibling;
+
+        // Перевірка, чи елемент з таким класом існує
+        if (accordionContent) {
+          // Переключення між відображенням і приховуванням активного контенту
+          if (window.getComputedStyle(accordionContent).display === "none") {
+            accordionContent.style.display = "block";
+          } else {
+            accordionContent.style.display = "none";
+          }
+
+          // Переключення стрілки у заголовку акордеону
+          var arrow = toggle.querySelector(".accordion-toggle::after");
+          if (arrow.textContent === '\u25B6') {
+            arrow.textContent = '\u25BC';
+          } else {
+            arrow.textContent = '\u25B6';
+          }
+        }
+      });
     });
-    
-    // Відкриваємо або закриваємо акордеон в залежності від стану
-    if (!isActive) {
-      content.forEach((item) => {
-        item.style.display = 'block';
-      });
-      row.classList.add('active');
-    } else {
-      content.forEach((item) => {
-        item.style.display = 'none';
-      });
-      row.classList.remove('active');
-    }
   });
-});
+}

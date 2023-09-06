@@ -1,3 +1,4 @@
+/* Загальні стилі для контейнера */
 .schedule-container {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@
     background-color: #131313;
 }
 
+/* Заголовок розкладу */
 .schedule {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -17,13 +19,17 @@
     text-align: center;
 }
 
-.schedule__table-container {
-    background-color: #131313;
-    overflow-x: auto;
-    
+/* Стилі для десктопної версії */
+.schedule.desktop {
+    display: block;
 }
 
-.schedule__table {
+.schedule.desktop .schedule__table-container {
+    background-color: #131313;
+    overflow-x: auto;
+}
+
+.schedule.desktop .schedule__table {
     width: 60%;
     border-collapse: collapse;
     font-size: 1rem;
@@ -33,11 +39,11 @@
     border-bottom: 1px solid #878787;
 }
 
-.schedule__row {
+.schedule.desktop .schedule__row {
     border-bottom: 1px solid #878787;
 }
 
-.schedule__heading {
+.schedule.desktop .schedule__heading {
     background-color: #131313;
     color: #fff;
     padding: 20px;
@@ -45,9 +51,9 @@
     border-bottom: 1px solid #878787;
 }
 
-.schedule__data,
-.schedule__time,
-.schedule__program {
+.schedule.desktop .schedule__data,
+.schedule.desktop .schedule__time,
+.schedule.desktop .schedule__program {
     padding: 25px;
     text-align: center;
     vertical-align: top;
@@ -55,28 +61,31 @@
     border-bottom: 1px solid #878787;
 }
 
-.schedule__time,
-.schedule__program {
+.schedule.desktop .schedule__time,
+.schedule.desktop .schedule__program {
     color: #878787;
 }
 
-.schedule__row:first-child td {
+.schedule.desktop .schedule__row:first-child td {
     vertical-align: middle;
 }
 
-.schedule__row td {
+.schedule.desktop .schedule__row td {
     vertical-align: top;
 }
 
-
-.accordion-content {
+/* Стилі для мобільної версії (акордеону) */
+.schedule.mobile {
     display: none;
-    padding: 10px;
+}
+
+.schedule.mobile .accordion-container {
     background-color: #131313;
+    padding: 10px;
     color: #fff;
 }
 
-.accordion-toggle {
+.schedule.mobile .accordion-toggle {
     background-color: #131313;
     color: #fff;
     padding: 20px;
@@ -84,18 +93,40 @@
     cursor: pointer;
     width: 100%;
     text-align: left;
+    border-bottom: 1px solid #878787;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.accordion-content p {
+.schedule.mobile .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #131313;
+    color: #fff;
+}
+
+.schedule.mobile .accordion-toggle::after {
+    content: '\25B6';
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.schedule.mobile .accordion-content p {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .accordion-content {
-      display: none;
-    }
-    .schedule__row.active .accordion-content {
-      display: block;
-    }
-  }
+.schedule.mobile .active .accordion-toggle::after {
+    transform: rotate(90deg);
+}
 
+/* Медіа-запит для приховування таблиці на мобільних пристроях */
+@media (max-width: 768px) {
+    .schedule.desktop {
+        display: none;
+    }
+
+    .schedule.mobile {
+        display: block;
+    }
+}
