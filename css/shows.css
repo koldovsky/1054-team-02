@@ -1,3 +1,9 @@
+@import url(global.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(controls.css);
+@import url(news.css);
+
 .shows {
     background-color: var(--ui-light-shade-color);
     padding: 90px 0 95px 0;
@@ -28,11 +34,11 @@
 }
 
 .shows .shows-card__image {
-    width: 720px;
-    height: 369px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     min-height: 140px;
-    object-position: 50% 0%;
+    object-position: top;
 }
 
 .shows__card-title {

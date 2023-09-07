@@ -19,6 +19,10 @@
     }
 }
 
+.why-choose-us__cards_container {
+    padding: 0px;
+}
+
 .why-choose-us-card {
     background-color: var(--ui-dark-shade-color);
     border-bottom-color: var(--ui-light-shade-color);
@@ -29,9 +33,9 @@
 }
 
 .why-choose-us-card__image {
-    object-position: 50% 0%;
-    width: auto;
-    height: auto;
+    object-position: top;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     min-height: 140px;
 }
