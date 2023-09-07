@@ -1,0 +1,17 @@
+.carousel-why-choose-us   {
+    background-color: var(--ui-dark-shade-color);
+    display: grid;
+    min-height: 400px;
+    gap: 5px;
+    align-content: baseline;
+}
+
+
+.carousel-why-choose-us-slide {
+    object-position: top;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    min-height: 140px;
+    padding: 0px 30px 0 30px;
+}

@@ -8,6 +8,6 @@ document.addEventListener('partialsLoaded', () => {
     import('./careers-animate.js');
     import('./fm-faces-avatar-zoom.js');
     import('/about-us.js');
-    import('/carousel-why-choose-us.js');
+    import('./carousel-why-choose-us.js');
     import('./shows.js');
 });
